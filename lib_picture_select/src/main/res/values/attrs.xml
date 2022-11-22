@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PictureSelectView">
+        <!-- 配置期望选择的文件类型 -->
+        <attr name="picture_flags" format="flags">
+            <flag name="Images" value="2"/>
+            <flag name="Gif" value="4"/>
+            <flag name="Videos" value="8"/>
+            <flag name="Audio" value="16"/>
+        </attr>
+        <!-- 只显示, 不能选择相册文件 -->
+        <attr name="picture_only_show" format="boolean"/>
+        <!-- 一行分成几列 -->
+        <attr name="picture_span_count" format="integer"/>
+        <!-- 是否可以选择原图, 默认false -->
+        <attr name="picture_is_original" format="boolean"/>
+        <!-- 是否在相册内显示拍摄, 默认false, action_dialog不受影响 -->
+        <attr name="picture_show_camera" format="boolean"/>
+        <!-- 最大可选择的数量 -->
+        <attr name="picture_max_count" format="integer"/>
+        <!-- 配置显示的布局 -->
+        <attr name="picture_layout_show" format="reference"/>
+        <!-- 配置选择的布局 -->
+        <attr name="picture_layout_select_add" format="reference"/>
+        <!-- 配置选择后图片显示的布局 -->
+        <attr name="picture_layout_select_normal" format="reference"/>
+        <!-- 是否执行自身的选择操作, 默认为true; 若为false, 用户选择图片后不会自动添加到列表, 需要手动操作 -->
+        <attr name="picture_action_select" format="boolean"/>
+        <!-- 是否执行自身的删除操作, 默认为true; 若为false, 需要用户手动删除操作 -->
+        <attr name="picture_action_delete" format="boolean"/>
+        <!-- 是否执行自身的显示操作, 默认为true; 若为false, 可以调用自身的显示控件 -->
+        <attr name="picture_action_show" format="boolean"/>
+        <!-- 是否可以调整顺序, 默认false -->
+        <attr name="picture_move" format="boolean"/>
+    </declare-styleable>
+</resources>

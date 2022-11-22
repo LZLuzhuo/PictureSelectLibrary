@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="picture_select_header_bar">#ff393a3e</color>
+    <color name="picture_select_center">#ff393a3e</color>
+    <color name="picture_select_bottom_bar">#ff393a3e</color>
+    <color name="picture_select_bucket_bg">#4e4d4e</color>
+    <color name="picture_select_complete_text_default">#53575e</color>
+    <color name="picture_select_complete_text">#FFFFFF</color>
+    <color name="picture_select_complete_bg_default">#394a3e</color>
+    <color name="picture_select_complete_bg">#20c064</color>
+    <color name="picture_select_preview_text_default">#9b9b9b</color>
+    <color name="picture_select_preview_text">#FFFFFF</color>
+    <color name="picture_select_original_default">#E0DBDBDB</color>
+    <color name="picture_select_original">#FF96E85D</color>
+    <color name="picture_select_pic_select">#BF96E85D</color>
+    <color name="picture_select_pic_tag_gif">#b0567ba3</color>
+    <color name="picture_select_bucket_normal">#ff393a3e</color>
+    <color name="picture_select_bucket_select">#ff2a2b2e</color>
+    <color name="picture_select_preview_center">#000000</color>
+    <color name="picture_select_preview_center_list">#cc393a3e</color>
+
+</resources>

@@ -1,0 +1,46 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'me.luzhuo.android:lib_file:1.1.13-SNAPSHOT'
+    implementation 'me.luzhuo.android:lib_core:2.5.86-SNAPSHOT'
+    implementation 'me.luzhuo.android:lib_permission:1.1.4-SNAPSHOT'
+    implementation 'me.luzhuo.android:lib_video:1.0.12-SNAPSHOT'
+    implementation 'me.luzhuo.android:lib_image_compress:1.0.7-SNAPSHOT'
+
+    implementation 'me.luzhuo.android:library_photoview:1.0.1-SNAPSHOT'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
+}
+apply from: 'maven.gradle'

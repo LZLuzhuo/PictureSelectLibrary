@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/picture_select_bucket_normal"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bucket_cover"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/core_icon_horizontal_buttons_doing_start"
+        app:shapeAppearanceOverlay="@style/Core_ShapeAppearance.rounded_rectangle" />
+
+    <TextView
+        android:id="@+id/bucket_name"
+        android:layout_gravity="center|start"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="所有相册"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/bucket_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="(0)"
+        android:textColor="#4DFFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.luzhuo.lib_picture_select">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application>
+        <activity android:name="me.luzhuo.lib_picture_select.PictureSelectActivity" android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/picture_select_theme" />
+        <activity android:name="me.luzhuo.lib_picture_select.PictureSelectPreviewActivity" android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/picture_select_theme" />
+    </application>
+</manifest>

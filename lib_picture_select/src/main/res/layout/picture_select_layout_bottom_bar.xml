@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/picture_select_bottom_bar"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/picture_select_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:padding="12dp"
+        android:text="预览"
+        android:textColor="@color/picture_select_preview_text_default"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/picture_select_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:button="@drawable/picture_select_checkbox_original"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:text="原图"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:background="#00000000"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+</RelativeLayout>
